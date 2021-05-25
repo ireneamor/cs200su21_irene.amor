@@ -1,0 +1,13 @@
+﻿  DrawLine.cpp
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(166,10): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(183,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(188,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(201,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(206,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(251,41): warning C4244: 'argument': conversion from 'float' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(251,31): warning C4244: 'argument': conversion from 'double' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(268,44): warning C4244: 'argument': conversion from 'double' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(268,31): warning C4244: 'argument': conversion from 'float' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(293,32): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\src\Engine\Rasterizer\DrawLine.cpp(293,42): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+  01.3 Draw Line.vcxproj -> C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200 git\cs200su21_irene.amor\Assignment 1.3\bin\Debug\x64\01.Draw Line.exe
