@@ -27,6 +27,8 @@ namespace Rasterizer
 	/// \brief	Wrapper function, draws a line using the current method. 
 	void DrawLine(const AEVec2& p1, const AEVec2& p2, const Color& c);
 
+	void DrawLine(const AEVec2& p1, const AEVec2& p2, const Color& c1, const Color& c2);
+
 	/// @TODO
 	// ------------------------------------------------------------------------
 	/// \fn		DrawLineNaive

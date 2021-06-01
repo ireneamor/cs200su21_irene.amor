@@ -8,6 +8,7 @@ namespace SimpleLines {
 	void Menu();
 	void Demo1();
 	void Demo2();
+	void Demo3();
 	u32 mode = 0;
 	
 
@@ -22,7 +23,9 @@ namespace SimpleLines {
 		FrameBuffer::Clear(Rasterizer::Color().FromU32(0xFFFFFFFF));
 
 		if (mode == 0)Demo1();
-		else Demo2();
+		else if (mode == 1) Demo2();
+		else Demo3();
+
 
 		// Send content of frame buffer to 
 		Rasterizer::FrameBuffer::Present();
@@ -113,11 +116,18 @@ namespace SimpleLines {
 		Rasterizer::DrawDiagonalLine(center, bot_left, Rasterizer::Color());
 	}
 
+	void Demo3() {
+		for (u32 i = 0; i < 100; ++i)
+			Rasterizer::DrawLine({ 0, f32(300+i) }, { (f32)FrameBuffer::GetWidth(), f32(300+i) },
+				Color().FromU32(AE_COLORS_RED), Color().FromU32(AE_COLORS_BLUE));
+	}
+
 	// ----------------------------------------------------------------------------
 	// GUI
 	void Menu()
 	{
 		if (ImGui::MenuItem("CS 200")) mode = 0;
 		if (ImGui::MenuItem("8 way pie")) mode = 1;
+		if (ImGui::MenuItem("Line Color Interpolation")) mode = 2;
 	}
 }

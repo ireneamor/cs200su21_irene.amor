@@ -1,2 +1,17 @@
-﻿  DrawTriangle.cpp
+﻿  DrawLine.cpp
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(95,52): warning C4244: '+=': conversion from 'f32' to 'u32', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(102,36): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(118,52): warning C4244: '+=': conversion from 'f32' to 'u32', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(125,33): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(226,10): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(243,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(248,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(261,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(266,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(311,41): warning C4244: 'argument': conversion from 'float' to 'u32', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(311,31): warning C4244: 'argument': conversion from 'double' to 'u32', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(328,44): warning C4244: 'argument': conversion from 'double' to 'u32', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(328,31): warning C4244: 'argument': conversion from 'float' to 'u32', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(353,32): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+C:\Users\irene.amor\Desktop\CS200\Lab3\src\Engine\Rasterizer\DrawLine.cpp(353,42): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
   03.Draw Triangle.vcxproj -> C:\Users\irene.amor\Desktop\CS200\Lab3\bin\Debug\x64\03.Draw Triangle.exe

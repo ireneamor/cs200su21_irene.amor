@@ -52,9 +52,6 @@
     <ClCompile Include="src\Levels\Common.cpp">
       <Filter>Game States</Filter>
     </ClCompile>
-    <ClCompile Include="src\Levels\SimpleLines.cpp">
-      <Filter>Game States</Filter>
-    </ClCompile>
     <ClCompile Include="src\Engine\Rasterizer\DrawCircle.cpp">
       <Filter>Graphics\Rasterizer\Scan Conversion</Filter>
     </ClCompile>
@@ -69,6 +66,9 @@
     </ClCompile>
     <ClCompile Include="src\Engine\Rasterizer\DrawTriangle.cpp">
       <Filter>Graphics\Rasterizer\Scan Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Levels\SimpleLines.cpp">
+      <Filter>Game States</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
