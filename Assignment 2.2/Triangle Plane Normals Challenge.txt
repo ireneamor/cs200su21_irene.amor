@@ -1,0 +1,38 @@
+For this lab you will have to recreate the game state "Plane Normal Demo" in as much fidelity as possible. Here are the recommended steps for the lab :
+
+1) Create the basic triangle used in the demo
+    it should be a right triangle such that in ccw order:
+        v0(0,1, RED), v1(0,0, GREEN), v2(1,0, BLUE).
+2) Draw the triangle using transformation.
+3) Draw the same triangle 4 times in a single row (or grid). 
+    3.5) Arrange the layout as you see fit. 
+4) For each triangle, change the values of the vertices (hint: use copies) so that it shows only the color corresponding to its channel.There are 4 triangles, one for each of the color channels RGBA.  The colors should come from the original vertices above. 
+    ex: red triangle v0(x0,y0, r0, 0, 0, 1), v1(x1,y1,r1,0,0,1), v2(x2,y2,r2,0,0,1);
+        green triangle v0(x0,y0, 0, g0, 0, 1), v1(x1,y1,0,g1,0,1), v2(x2,y2,0,g2,0,1);
+
+        ... etc ...
+
+5) Use a global variable to hold the current pixel position marker in normal coordinates. 
+6) Draw it in pixel space on the main triangle. (use transforms)
+    Use either a filled circle or a filled rectangle
+7) Draw it in pixel space on each of the smaller triangles. (use transforms). 
+    Use either a filled circle or a filled rectangle
+8) Move it with keyboard. 
+    8.5) Move it with the mouse
+9) Clamp it to the edges of the triangles
+    Use the AELineSegment2D and the function AEStaticPointToStaticLineSegment() to check
+    on which side of a line you are (in/out).
+10) Create the Plane structure
+    Use this template: 
+    
+		struct plane 
+		{
+			plane(AEVec3 tri[3]);
+			f32 findZFromPoint(AEVec2 P);
+			AEVec3 N;
+			f32 D;
+		};
+
+11) Evaluate the plane equation (function findZFromPoint()) to get the value of the  attribute corresponding to the the pixel position marker. Display the value using AEGfxPrint.
+    Hint Use a Plane for each of the small triangles we created in step 4, call the findZFromPoint() passing the value of the pixel position marker. 
+

@@ -1,0 +1,44 @@
+﻿  Color.cpp
+  DrawCircle.cpp
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(191,34): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(191,49): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(192,34): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(192,49): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(193,34): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(193,49): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(194,34): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(194,49): warning C4244: 'argument': conversion from 'unsigned long' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(202,10): warning C4244: 'initializing': conversion from 'int' to 'f32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(203,10): warning C4244: 'initializing': conversion from 'int' to 'f32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(209,31): warning C4244: 'argument': conversion from 'f32' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(209,28): warning C4244: 'argument': conversion from 'f32' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(215,31): warning C4244: 'argument': conversion from 'f32' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawCircle.cpp(215,28): warning C4244: 'argument': conversion from 'f32' to 'u32', possible loss of data
+  DrawLine.cpp
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(166,10): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(183,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(188,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(201,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(206,14): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(251,41): warning C4244: 'argument': conversion from 'float' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(251,31): warning C4244: 'argument': conversion from 'double' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(268,44): warning C4244: 'argument': conversion from 'double' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(268,31): warning C4244: 'argument': conversion from 'float' to 'u32', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(293,32): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Rasterizer\DrawLine.cpp(293,42): warning C4244: 'argument': conversion from 'u32' to 'const float', possible loss of data
+  DrawTriangle.cpp
+  FrameBuffer.cpp
+  Rounding.cpp
+  FilePath.cpp
+  OpenSaveFile.cpp
+C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\src\Engine\Utils\OpenSaveFile.cpp(99,62): warning C4267: 'argument': conversion from 'size_t' to 'UINT', possible loss of data
+  Common.cpp
+  FreeDraw.cpp
+  PlaneNormalDemo.cpp
+  SimpleCircles.cpp
+  SimpleLines.cpp
+  SimpleTriangles.cpp
+  StressTests.cpp
+  Main.cpp
+  Generating Code...
+  03.Draw Triangle.vcxproj -> C:\Users\iamor\Documents\DIGIPEN\Freshman Year\cs200su21_irene.amor\Assignment 2.1\bin\Debug\x64\03.Draw Triangle.exe
