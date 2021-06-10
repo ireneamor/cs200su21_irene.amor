@@ -1,3 +1,12 @@
+// ----------------------------------------------------------------------------
+// Project Name		:	2.3 Draw Triangle
+// File Name		:	DrawTriangle.cpp
+// Author			:	Irene Amor Mendez
+// Creation Date	:	June 10, 2021
+// Purpose			:	Calculates different triangle filling methods after
+//						classifying them
+// ----------------------------------------------------------------------------
+
 #include <AEEngine.h>
 #include "Rasterizer.h"
 
@@ -441,6 +450,92 @@ namespace Rasterizer
 	///	\param	v1	Second triangle vertex (position/color).
 	///	\param	v2	Third triangle vertex (position/color).
 	void DrawTriangleBarycentric(const Vertex& v0, const Vertex& v1, const Vertex& v2)
-	{}
+	
+	{
+		//1.SETUP
+		//1.1. Determine case
+		int TOP, MID, BOT;
+		bool midIsLeft = DetermineCase(v0.mPosition.y, v1.mPosition.y, v2.mPosition.y, TOP, MID, BOT);
+		const Vertex* vtx[3] = { &v0, &v1, &v2 };
+
+		//1.2. Compute slopes
+		//Inverse slopes
+		float mInvTB = (vtx[BOT]->mPosition.x - vtx[TOP]->mPosition.x) / (vtx[BOT]->mPosition.y - vtx[TOP]->mPosition.y);
+		float mInvTM = (vtx[MID]->mPosition.x - vtx[TOP]->mPosition.x) / (vtx[MID]->mPosition.y - vtx[TOP]->mPosition.y);
+		float mInvMB = (vtx[BOT]->mPosition.x - vtx[MID]->mPosition.x) / (vtx[BOT]->mPosition.y - vtx[MID]->mPosition.y);
+
+		//Slope values
+		float slopeLeft = midIsLeft ? mInvTM : mInvTB;
+		float slopeRight = midIsLeft ? mInvTB : mInvTM;
+
+		//1.3. Set the data for the loop
+		//Loop variables
+		float yS = vtx[TOP]->mPosition.y;
+		float yE = vtx[MID]->mPosition.y;
+		float xL = vtx[TOP]->mPosition.x;
+		float xR = vtx[TOP]->mPosition.x;
+
+		//1.4 Calculate normal of the triangle
+		AEVec2 v0v1 = v0.mPosition - v1.mPosition;
+		AEVec2 v0v2 = v0.mPosition - v2.mPosition;
+		float n = v0v1.CrossMag(v0v2);
+
+		//2.TRAVERSE
+		for (int i = 1; i <= 2; i++)
+		{
+			//2.1. Start with the data for TOP-MID
+			//Loop on y
+			for (int y = Ceiling(yS); y >= Ceiling(yE) + 1; y--)
+			{
+				//Loop on x
+				for (int x = Floor(xL); x <= Floor(xR) - 1; x++)
+				{
+					//Calculate vectors from point to each vertex
+					AEVec2 P = { (float)x, (float)y };
+					AEVec2 PV0 = P - v0.mPosition;
+					AEVec2 PV1 = P - v1.mPosition;
+					AEVec2 PV2 = P - v2.mPosition;
+
+					//Calculate the barycentric coordinates
+					float Lambda1 = (PV2.CrossMag(PV0)) / n;
+					float Lambda2 = (PV0.CrossMag(PV1)) / n;
+					float Lambda0 = 1 - Lambda1 - Lambda2;
+
+					//If the point is outside the triangle, skip next steps
+					if (Lambda0 < 0 || Lambda1 < 0 || Lambda2 < 0)
+						continue;
+
+					//Calculate the color
+					Color color = v0.mColor;
+					color.r = (Lambda0 * v0.mColor.r) + (Lambda1 * v1.mColor.r) + (Lambda2 * v2.mColor.r);
+					color.g = (Lambda0 * v0.mColor.g) + (Lambda1 * v1.mColor.g) + (Lambda2 * v2.mColor.g);
+					color.b = (Lambda0 * v0.mColor.b) + (Lambda1 * v1.mColor.b) + (Lambda2 * v2.mColor.b);
+					color.a = (Lambda0 * v0.mColor.a) + (Lambda1 * v1.mColor.a) + (Lambda2 * v2.mColor.a);
+					
+					//Set the pixel
+					FrameBuffer::SetPixel(x, y, color);
+				}
+
+				//Update position
+				xL -= slopeLeft;
+				xR -= slopeRight;
+			}
+			
+			//2.2. Change the data for MID-BOT
+			//Change the first and last values of y
+			yS = vtx[MID]->mPosition.y;
+			yE = vtx[BOT]->mPosition.y;
+
+			//Set the leftmost value of x
+			if (midIsLeft)
+				xL = vtx[MID]->mPosition.x;
+			else
+				xR = vtx[MID]->mPosition.x;
+
+			//Update the slopes and steps depending on which vertex is to the left
+			slopeLeft = midIsLeft ? mInvMB : mInvTB;
+			slopeRight = midIsLeft ? mInvTB : mInvMB;
+		}
+	}
 
 }
